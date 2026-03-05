@@ -1,0 +1,23 @@
+# Python bytecode (sudah ada di screenshot Anda)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database (untuk menjaga data kehadiran tetap lokal)
+attendance.db
+
+# Virtual Environment (opsional, tapi disarankan jika Anda membuatnya nanti)
+venv/
+.env/
+env/
+
+# Folder Models (file .tflite biasanya besar, lebih baik diunduh terpisah)
+# Jika Anda ingin tetap menyimpannya di Git, hapus baris di bawah ini
+models/
+
+# Folder data hasil training atau foto wajah (untuk privasi)
+known_faces/
+
+# OS files
+.DS_Store
+Thumbs.db
