@@ -1,23 +1,26 @@
-# Python bytecode (sudah ada di screenshot Anda)
+# Python bytecode
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Database (untuk menjaga data kehadiran tetap lokal)
+# Database (Data kehadiran tetap lokal)
 attendance.db
 
-# Virtual Environment (opsional, tapi disarankan jika Anda membuatnya nanti)
+# Virtual Environment
 venv/
 .env/
 env/
 
-# Folder Models (file .tflite biasanya besar, lebih baik diunduh terpisah)
-# Jika Anda ingin tetap menyimpannya di Git, hapus baris di bawah ini
+# Folder Models (File besar, diunduh via script)
 models/
 
-# Folder data hasil training atau foto wajah (untuk privasi)
+# Data wajah (Privasi user)
 known_faces/
+
+# Folder Backup/Temporary Assets
+assets/temp/
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
