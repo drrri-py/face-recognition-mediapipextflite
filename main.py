@@ -1,6 +1,7 @@
 import cv2
 import mediapipe as mp
 import time
+# from utils import draw_status # Import fungsi overlay status
 
 def main():
     # Initialize MediaPipe Face Mesh
@@ -71,6 +72,9 @@ def main():
         # Display FPS on screen
         cv2.putText(image, f"FPS: {int(fps)}", (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         cv2.putText(image, "MediaPipe Diagnostic Mode", (20, 80), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 1)
+
+        # Contoh penggunaan overlay (commented out):
+        # image = draw_status(image, 'SUCCESS', 'Nama User')
 
         cv2.imshow('MediaPipe Face Mesh Diagnostic', image)
         
